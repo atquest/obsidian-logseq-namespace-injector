@@ -1,0 +1,9 @@
+{
+  "id": "logseq-namespace-injector",
+  "name": "Logseq Namespace Injector",
+  "version": "1.0.0",
+  "author": "Stefan",
+  "description": "Injects Logseq-style metadata into new notes in Obsidian.",
+  "main": "main.js",
+  "minAppVersion": "0.12.0"
+}

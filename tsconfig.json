@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "outDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "obsidian": ["node_modules/obsidian"]
+    }
+  },
+  "include": ["main.ts"],
+  "exclude": ["node_modules"]
+}

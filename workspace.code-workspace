@@ -1,0 +1,43 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "projects"
+    },
+    {
+      "path": "bin"
+    },
+    {
+      "path": "promptforge"
+    },
+    {
+      "path": "smithery"
+    },
+    {
+      "path": "raycast_scripts"
+    },
+    {
+      "path": "templates"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/.git": true,
+      "**/node_modules": true
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "github.vscode-pull-request-github",
+      "ms-python.python",
+      "ms-vscode.vscode-typescript-next"
+    ]
+  }
+}

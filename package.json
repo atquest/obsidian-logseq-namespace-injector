@@ -1,0 +1,13 @@
+{
+  "name": "obsidian-logseq-namespace-injector",
+  "version": "1.0.0",
+  "description": "Injects Logseq metadata into new notes.",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "obsidian": "^1.0.0",
+    "typescript": "^5.0.0"
+  }
+}
