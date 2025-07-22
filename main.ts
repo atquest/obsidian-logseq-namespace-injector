@@ -133,7 +133,7 @@ class BulkOperationModal extends Modal {
 }
 
 export default class LogseqNamespaceInjector extends Plugin {
-    settings: LogseqNamespaceSettings;
+    settings!: LogseqNamespaceSettings;
 
     async onload() {
         console.log('Loading Logseq Namespace Injector plugin v2.0');
@@ -315,9 +315,9 @@ export default class LogseqNamespaceInjector extends Plugin {
                     originalContent: content,
                     timestamp: Date.now()
                 });
-            } catch (error) {
+            } catch (error: any) {
                 console.error(`Failed to backup ${file.path}:`, error);
-                throw new Error(`Backup failed for ${file.path}: ${error.message}`);
+                throw new Error(`Backup failed for ${file.path}: ${error?.message || 'Unknown error'}`);
             }
         }
         
@@ -393,9 +393,9 @@ export default class LogseqNamespaceInjector extends Plugin {
                 () => new Notice('Operation cancelled.')
             ).open();
 
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error during file processing:', error);
-            new Notice(`❌ Error: ${error.message}`);
+            new Notice(`❌ Error: ${error?.message || 'Unknown error'}`);
         }
     }
 
@@ -428,8 +428,8 @@ export default class LogseqNamespaceInjector extends Plugin {
                         await new Promise(resolve => setTimeout(resolve, 50));
                     }
                     
-                } catch (error) {
-                    throw new Error(`Failed to modify ${change.file.path}: ${error.message}`);
+                } catch (error: any) {
+                    throw new Error(`Failed to modify ${change.file.path}: ${error?.message || 'Unknown error'}`);
                 }
             }
 
@@ -452,7 +452,7 @@ export default class LogseqNamespaceInjector extends Plugin {
                 progress.finish('❌ Operation failed. All files restored to original state.');
             }
             
-            new Notice(`❌ Operation failed: ${error.message}\nAll files have been restored.`);
+            new Notice(`❌ Operation failed: ${(error as any)?.message || 'Unknown error'}\nAll files have been restored.`);
         }
     }
 
