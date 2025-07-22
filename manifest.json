@@ -4,6 +4,7 @@
   "version": "2.0.0",
   "author": "Stefan",
   "description": "Injects Logseq-style metadata into new notes in Obsidian.",
+  "repo": "atquest/obsidian-logseq-namespace-injector",
   "main": "main.js",
   "minAppVersion": "0.12.0"
 }
