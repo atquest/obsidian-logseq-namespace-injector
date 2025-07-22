@@ -2,9 +2,10 @@
   "id": "logseq-namespace-injector",
   "name": "Logseq Namespace Injector",
   "version": "2.0.0",
-  "author": "Stefan",
-  "description": "Injects Logseq-style metadata into new notes in Obsidian.",
-  "main": "main.js",
   "minAppVersion": "0.12.0",
+  "description": "Automatically injects Logseq-style namespace metadata into new notes based on their folder structure. Features atomic operations, progress tracking, and comprehensive safety features.",
+  "author": "Stefan van Pelt",
+  "authorUrl": "https://github.com/atquest",
+  "fundingUrl": "https://bunq.me/svp",
   "isDesktopOnly": false
 }

@@ -1,10 +1,14 @@
 {
   "name": "obsidian-logseq-namespace-injector",
-  "version": "1.0.0",
-  "description": "Injects Logseq metadata into new notes.",
+  "version": "2.0.0",
+  "description": "Automatically injects Logseq-style namespace metadata into new notes based on their folder structure.",
   "main": "main.js",
+  "keywords": ["obsidian", "plugin", "logseq", "namespace", "metadata"],
+  "author": "Stefan van Pelt",
+  "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "devDependencies": {
     "obsidian": "^1.0.0",
