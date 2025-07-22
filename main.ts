@@ -637,5 +637,19 @@ class LogseqNamespaceInjectorSettingTab extends PluginSettingTab {
                 <li>✅ Progress tracking for large operations</li>
             </ul>
         `;
+
+        // Support section
+        containerEl.createEl('h3', { text: 'Support the Plugin' });
+        
+        const supportDiv = containerEl.createDiv();
+        supportDiv.innerHTML = `
+            <p>If this plugin has been helpful for your workflow, consider supporting its development:</p>
+            <p>
+                <a href="https://bunq.me/svp" target="_blank" style="display: inline-block; background-color: #ff8c00; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold;">
+                    ☕ Support via bunq.me/svp
+                </a>
+            </p>
+            <p style="font-size: 0.9em; color: var(--text-muted);">Your support helps maintain and improve this plugin. Thank you! 🙏</p>
+        `;
     }
 }
