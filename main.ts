@@ -644,11 +644,14 @@ class LogseqNamespaceInjectorSettingTab extends PluginSettingTab {
         const supportDiv = containerEl.createDiv();
         supportDiv.innerHTML = `
             <p>If this plugin has been helpful for your workflow, consider supporting its development:</p>
-            <p>
+            <div style="display: flex; gap: 10px; margin: 15px 0; flex-wrap: wrap;">
                 <a href="https://bunq.me/svp" target="_blank" style="display: inline-block; background-color: #ff8c00; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold;">
-                    ☕ Support via bunq.me/svp
+                    💳 Support via bunq.me/svp
                 </a>
-            </p>
+                <a href="https://coff.ee/atquest" target="_blank" style="display: inline-block;">
+                    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=atquest&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" style="height: 36px; border-radius: 4px;">
+                </a>
+            </div>
             <p style="font-size: 0.9em; color: var(--text-muted);">Your support helps maintain and improve this plugin. Thank you! 🙏</p>
         `;
     }
